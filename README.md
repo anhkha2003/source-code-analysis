@@ -22,6 +22,7 @@ Before running the tool, ensure that the `unzip` utility is installed on your sy
 
 ```bash
 sudo apt-get install unzip
+```
 
 ## Compilation
 
@@ -29,6 +30,7 @@ Compile the tool using the following command:
 
 ```bash
 g++ -std=c++17 -o detector detector.cpp
+```
 
 ## Usage
 
@@ -36,6 +38,7 @@ To run the tool, use the following command format:
 
 ```bash
 ./detector -s <submission path> -d <testdata path>
+```
 
 Where <submission path> and <testdata path> can be paths to either directories or zip files containing the submissions and test data, respectively.
 
@@ -45,11 +48,13 @@ Where <submission path> and <testdata path> can be paths to either directories o
 
 ```bash
 ./detector -s /path/to/submissions -d /path/to/testdata
+```
 
 - **Analyzing Zip files**:
 
 ```bash
 ./detector -s /path/to/submissions -d /path/to/testdata
+```
 
 ## Output
 The tool outputs the similarity scores of the analyzed source files, sorted from the highest to the lowest. Each output line includes the similarity score followed by the filename of the source code.
